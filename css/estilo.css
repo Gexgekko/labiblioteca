@@ -1,0 +1,29 @@
+* {
+	font-size: 16px;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+body {
+	background-color: black;
+	color: yellow;
+}
+
+div {
+	margin-top: 10px;
+}
+
+input {
+	background-color: black;
+	border: black;
+}
+.titulo {
+	font-size: 22px;
+}
+
+.textoJugador {
+	color: white;
+}
+
+
+input:focus {
+	outline: none;
+}
