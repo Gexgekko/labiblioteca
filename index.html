@@ -22,13 +22,13 @@
 				<p>(No te preocupes, el nombre es temporal)</p>
 				<p>Introduce tu nombre, pero calladito, que estamos en una BIBLIOTECA magica</p>
 				<p>('BIBLIOTECA' es mas importante que 'magica' y por eso lleva mayusculas)</p>
-				<span>mente:~$ <input type="text" class="textoJugador" ng-model="nombreJugador" ng-keypress="daEnter($event,1,3)" /></span>
+				<span>mente:~$ <input type="text" class="textoJugador" ng-model="player.nombre" ng-keypress="daEnter($event,1,3)" /></span>
 			</div>
 
 			<div ng-show="txtcentral == 1">
-				<p ng-show="parrafo == 0 || parrafo ==  1 || parrafo == 2 || parrafo == 3">Tu nombre es {{ nombreJugador }}</p>
-				<p ng-show="parrafo ==  1 || parrafo == 2 || parrafo == 3 ">Ahora que sabemos como te llamas (te llamas {{ nombreJugador }}, por si no te acordabas) te asignaremos una labor y suponiendo que tu cerebro de para realizarla, la eleccion sera definitiva... O no... A mi me da igual, es cosa tuya.</p>
-				<p ng-show="parrafo == 2 || parrafo == 3 ">Sigueme, {{ nombreJugador }}, ven a mirar estos libros sobre magia (y demas cosas inutiles) y elige uno adecuado... O no... A mi me da igual, es cosa tuya.</p>
+				<p ng-show="parrafo == 0 || parrafo ==  1 || parrafo == 2 || parrafo == 3">Tu nombre es {{ player.nombre }}</p>
+				<p ng-show="parrafo ==  1 || parrafo == 2 || parrafo == 3 ">Ahora que sabemos como te llamas (te llamas {{ player.nombre }}, por si no te acordabas) te asignaremos una labor y suponiendo que tu cerebro de para realizarla, la eleccion sera definitiva... O no... A mi me da igual, es cosa tuya.</p>
+				<p ng-show="parrafo == 2 || parrafo == 3 ">Sigueme, {{ player.nombre }}, ven a mirar estos libros sobre magia (y demas cosas inutiles) y elige uno adecuado... O no... A mi me da igual, es cosa tuya.</p>
 				<p ng-show="parrafo == 3">*Buscando los libros en la estanteria, por favor, espera aproximadamente 3.14159 segundos*</p>
 			</div>
 		</div>
