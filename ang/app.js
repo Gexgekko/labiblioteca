@@ -10,7 +10,7 @@ laBibliotecaApp.controller('baseCtrl', ['$scope','$interval', function($scope,$i
  			vm.parrafo = 0;
  			$interval(function(){
  				vm.parrafo = vm.parrafo + 1;
- 			}, 5000, parr);
+ 			}, 3000, parr);
  		}
 	}
 }])
