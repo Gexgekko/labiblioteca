@@ -28,9 +28,9 @@
 			</div>
 
 			<div ng-show="txtcentral == 1">
-				<p ng-show="parrafo >= 0">Tu nombre es {{ player.nombre }}</p>
+				<p ng-show="parrafo >= 0">Tu nombre es <span class="textoJugador">{{ player.nombre }}</span></p>
 				<p ng-show="parrafo >=  1">Ahora que sabemos como te llamas (te llamas {{ player.nombre }}, por si no te acordabas) te asignaremos una labor y suponiendo que tu cerebro de para realizarla, la eleccion sera definitiva... O no... A mi me da igual, es cosa tuya.</p>
-				<p ng-show="parrafo >= 2">Sigueme, {{ player.nombre }}, ven a mirar estos libros sobre magia (y demas cosas inutiles) y elige uno adecuado... O no... A mi me da igual, es cosa tuya.</p>
+				<p ng-show="parrafo >= 2">Sigueme, <span class="textoJugador">{{ player.nombre }}</span>, ven a mirar estos libros sobre magia (y demas cosas inutiles) y elige uno adecuado... O no... A mi me da igual, es cosa tuya.</p>
 				<p ng-show="parrafo >= 3">*Buscando los libros en la estanteria, por favor, espera aproximadamente 3.14159 segundos*</p>
 			</div>
 		</div>
