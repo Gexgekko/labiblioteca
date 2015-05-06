@@ -8,9 +8,11 @@ laBibliotecaApp.controller('baseCtrl', ['$scope','$interval', function($scope,$i
  			console.log(vm.nombreJugador);
  			vm.txtcentral = bloque;
  			vm.parrafo = 0;
- 			$interval(function(){
- 				vm.parrafo = vm.parrafo + 1;
- 			}, 3000, parr);
+ 			if(parr > 0){
+ 				$interval(function(){
+ 					vm.parrafo = vm.parrafo + 1;
+ 				}, 3000, parr);
+ 			}
  		}
 	}
 }])
