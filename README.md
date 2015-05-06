@@ -2,6 +2,8 @@
 
 Fue inicialmente escrito en Batch como ideilla, pero he decidido intentarlo en una versión en AngularJS con menos complicaciones.
 
-###### No os olvidéis de mirar la consola ;)
+Es un juego basado en texto, de rol.
 
-Juego publicado [AQUÍ](gexgekko.github.io/labiblioteca), está incompleto.
+#### No os olvidéis de mirar la consola ;)
+
+[JUGAR](gexgekko.github.io/labiblioteca)
