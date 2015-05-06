@@ -16,7 +16,7 @@
 		<script type="text/javascript" src="ang/app.js"></script>
 	</head>
 
-	<body ng-controller="baseCtrl">
+	<body ng-controller="baseCtrl"  ng-keydown="daEnter($event,2,0)">
 		<div class="col-xs-6 col-md-4"><!--Inventario y stats personales.--></div>
 		<div class=" col-xs-6 col-md-4">
 			<div ng-show="txtcentral == 0">
