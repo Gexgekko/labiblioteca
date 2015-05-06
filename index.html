@@ -24,26 +24,46 @@
 				<p>(No te preocupes, el nombre es temporal)</p>
 				<p>Introduce tu nombre, pero calladito, que estamos en una BIBLIOTECA magica</p>
 				<p>('BIBLIOTECA' es mas importante que 'magica' y por eso lleva mayusculas)</p>
-				<span>mente:~$ <input type="text" class="textoJugador" ng-model="player.nombre" ng-keypress="daEnter($event,1,3)" /></span>
+				<span>mente:~$ <input type="text" class="textoJugador" ng-model="player.nombre" ng-keyup="daEnter($event,1,3)" /></span>
 			</div>
 
 			<div ng-show="txtcentral == 1">
 				<p ng-show="parrafo >= 0">Tu nombre es <span class="refRojo">{{ player.nombre }}</span></p>
 				<p ng-show="parrafo >=  1">Ahora que sabemos como te llamas (te llamas <span class="refRojo">{{ player.nombre }}</span>, por si no te acordabas) te asignaremos una labor y suponiendo que tu cerebro de para realizarla, la eleccion sera definitiva... O no... A mi me da igual, es cosa tuya.</p>
 				<p ng-show="parrafo >= 2">Sigueme, <span class="refRojo">{{ player.nombre }}</span>, ven a mirar estos libros sobre magia (y demas cosas inutiles) y elige uno adecuado... O no... A mi me da igual, es cosa tuya.</p>
-				<p ng-show="parrafo >= 3">*Buscando los libros en la estanteria, por favor, espera aproximadamente <span class="refRojo">3.14159</span> segundos*<input type="text" ng-keypress="daEnter($event,2,0)" autofocus /></p>
+				<p ng-show="parrafo >= 3">*Buscando los libros en la estanteria, por favor, espera aproximadamente <span class="refRojo">3.14159</span> segundos*
+				<input type="text" ng-keyup="daEnter($event,2,0)" placeholder="Continuar..." autofocus /></p>
 			</div>
 			<div ng-show="txtcentral == 2">
 				<p ng-show="parrafo >= 0">
-				---------------------------------Libros---------------------------------<br/>
-				1.Magia y hechiceria de Lord Maginktong<br/>
-				2.Lucha sin armas de Muertin Tarantula<br/>
-				3.Caballeria y armaduras sucias<br/>
-				4.Como robar en tu primera cita<br/>
-				5.Robin and Flechin (Hoods brothers)<br/>
-				6.Asesinos que no (siempre) se esconden, de Muertin Tarantula (otra vez?)<br/>
-				7.Demas cosas inutiles<br/>
-				-------------------------------------------------------------------------
+				----------------------------Libros----------------------------<br/>
+				<span ng-click="parrafo = 1">1.Magia y hechiceria de Lord Maginktong</span><br/>
+				<span ng-click="parrafo = 2">2.Lucha sin armas de Muertin Tarantula<br/>
+				<span ng-click="parrafo = 3">3.Caballeria y armaduras sucias<br/>
+				<span ng-click="parrafo = 4">4.Como robar en tu primera cita<br/>
+				<span ng-click="parrafo = 5">5.Robin and Flechin (Hoods brothers)<br/>
+				<span ng-click="parrafo = 6">6.Asesinos que no (siempre) se esconden, de Muertin Tarantula (otra vez?)<br/>
+				<span ng-click="parrafo = 7">7.Demas cosas inutiles<br/>
+				---------------------------------------------------------------
+				</p>
+
+				<p ng-show="parrafo == 1">
+				Veo que has cogido el libro de los magos...<br/>
+				No lo leas, yo te hago un resumen:<br/>
+				Tal tal tal, bla bla bla, drogas, chutes de magiadina, flipes anatomicos,<br/>
+				y sobretodo, mucha 'magia'... Magia de la buena, colega!<br/>
+				En serio tio, te lo juro, magia de esa que te hace levitar... pfff...<br/>
+				Recuerdo cuando era joven y... A LO QUE IBAMOS, aqui tienes las stats:<br/>
+				<br/>
+				Magia -- Un porron de puntos (Tan solo 20, pero es mas que de lo otro)<br/>
+				Hechiceria -- 20 puntos (Esta stat es la misma que Magia, pero suena chula)<br/>
+				Pegar -- 15 puntos. Esto sirve para pegar a la gente con tu arma.<br/>
+				Golpear -- 13 puntos. Es como pegar, pero sin armas (vaya rollo!)<br/>
+				Esquivar -- 17 puntos. Tu habilidad para evitar objetos voladores identificados<br/>
+				Aguante -- 13 puntos. Si te pegan, tu aguantas. Hasta yo lo se.<br/>
+				Vitalidad -- 15 puntos. Es lo que duras en pie (o tumbado si peleas asi)<br/>
+				Sigilo -- 15 puntos. Si haces ruido, te cogen, si no, no.<br/>
+				Precision -- 15 puntos. 'Donde pongo el ojo, ahi se queda'<br/>
 				</p>
 			</div>
 		</div>
