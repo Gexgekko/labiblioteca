@@ -31,7 +31,7 @@
 				<p ng-show="parrafo >= 0">Tu nombre es <span class="refRojo">{{ player.nombre }}</span></p>
 				<p ng-show="parrafo >=  1">Ahora que sabemos como te llamas (te llamas <span class="refRojo">{{ player.nombre }}</span>, por si no te acordabas) te asignaremos una labor y suponiendo que tu cerebro de para realizarla, la eleccion sera definitiva... O no... A mi me da igual, es cosa tuya.</p>
 				<p ng-show="parrafo >= 2">Sigueme, <span class="refRojo">{{ player.nombre }}</span>, ven a mirar estos libros sobre magia (y demas cosas inutiles) y elige uno adecuado... O no... A mi me da igual, es cosa tuya.</p>
-				<p ng-show="parrafo >= 3">*Buscando los libros en la estanteria, por favor, espera aproximadamente <span class="refRojo">3.14159</span> segundos*<input type="hidden" ng-keypress="daEnter($event,2,0)" autofocus /></p>
+				<p ng-show="parrafo >= 3">*Buscando los libros en la estanteria, por favor, espera aproximadamente <span class="refRojo">3.14159</span> segundos*<input type="text" ng-keypress="daEnter($event,2,0)" autofocus /></p>
 			</div>
 			<div ng-show="txtcentral == 2">
 				<p ng-show="parrafo >= 0">
