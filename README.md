@@ -2,4 +2,6 @@
 
 Fue inicialmente escrito en Batch como ideilla, pero he decidido intentarlo en una versión en AngularJS con menos complicaciones.
 
-En la el fichero "batch" meteré el original (con contraseña, aunque es solo un boceto/prueba).
+###### No os olvidéis de mirar la consola ;)
+
+Juego publicado [AQUÍ](gexgekko.github.io/labiblioteca), está incompleto.
