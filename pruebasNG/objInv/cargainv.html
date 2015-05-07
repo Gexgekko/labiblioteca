@@ -12,7 +12,13 @@
 	</head>
 	<body ng-controller="invCtrl">
 		<div>
-			Hola
+			<p ng-repeat="objeto in objetos">
+				<img src="{{ objeto.img }}" width="48" height="48" />
+				<span>{{ objeto.nombre }}</span>
+				<br/>
+				<span>{{ objeto.desc }}</span>
+				<span>Puntos de {{ objeto.tipo }}: {{ objeto.puntos }}</span>
+			</p>
 		</div>
 	</body>
 </html>

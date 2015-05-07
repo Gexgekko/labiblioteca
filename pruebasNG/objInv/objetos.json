@@ -1,11 +1,15 @@
 [ 
   {  
-    "nombre":"Casco1",
-    "tipo":"defensa",
-    "puntos":"5"
+    "nombre":"Espadón",
+    "tipo":"espada",
+    "desc":"Espadón chachi maximo",
+    "puntos":"5",
+    "img":"img/espadon.png"
   },{  
-    "nombre":"Arma1",
-    "tipo":"ataque",
-    "puntos":"10"
+    "nombre":"Espadita",
+    "tipo":"defensa",
+    "desc":"Espadita de defensa",
+    "puntos":"10",
+    "img":"img/espadita.png"
   }
 ]
