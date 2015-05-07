@@ -1,14 +1,11 @@
 [ 
-  {
-    "objeto1":{  
-      "nombre":"Casco1",
-      "tipo":"defensa",
-      "puntos":"5"
-    },
-    "objeto2":{  
-      "nombre":"Arma1",
-      "tipo":"ataque",
-      "puntos":"10"
-    }
+  {  
+    "nombre":"Casco1",
+    "tipo":"defensa",
+    "puntos":"5"
+  },{  
+    "nombre":"Arma1",
+    "tipo":"ataque",
+    "puntos":"10"
   }
 ]
