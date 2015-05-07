@@ -6,10 +6,10 @@
     "puntos":"5",
     "img":"img/espadon.png"
   },{  
-    "nombre":"Espadita",
+    "nombre":"Escudito Ardillil",
     "tipo":"defensa",
-    "desc":"Espadita de defensa",
-    "puntos":"10",
-    "img":"img/espadita.png"
+    "desc":"Es un pájaro? Es un avión? NOO!! Es el nuevo ESCUDITO SUPER PROTECTOR ARDILLÍSTICO de Ardillas Corp. en colaboración con Josué.",
+    "puntos":"10000000",
+    "img":"img/escudito.png"
   }
 ]
