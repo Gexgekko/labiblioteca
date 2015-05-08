@@ -14,22 +14,22 @@
     "tipo":"defensa",
     "desc":"Es un pájaro? Es un avión? NOO!! Es el nuevo ESCUDITO SUPER PROTECTOR ARDILLÍSTICO de Ardillas Corp. en colaboración con Josué.",
     "puntos":"10000000",
-    "img":"img/escudito.png"
+    "img":"img/escu_dos.png"
   },{
     "id":"03",
     "nombre":"Escu2",
     "lugar":"bIzq",
     "tipo":"defensa",
-    "desc":"Es un pájaro? Es un avión? NOO!! Es el nuevo ESCUDITO SUPER PROTECTOR ARDILLÍSTICO de Ardillas Corp. en colaboración con Josué.",
+    "desc":"El nuevo escudo de DOBLE O NADA te trae la mejor protección con cristalitos molones. DOBLE O NADA no se hace responsable de cortes, magulladuras o problemas de visión causados por el dispositivo Escu2.",
     "puntos":"10000000",
     "img":"img/escudito.png"
   },{
     "id":"04",
-    "nombre":"Casco IMG Espadon",
+    "nombre":"Enmascara2",
     "lugar":"cabeza",
     "tipo":"defensa",
-    "desc":"Es un pájaro? Es un avión? NOO!! Es el nuevo ESCUDITO SUPER PROTECTOR ARDILLÍSTICO de Ardillas Corp. en colaboración con Josué.",
+    "desc":"DOBLE O NADA te deslumbra con su nuevo casco submarino Enmascara2. DOBLE O NADA no se hace responsable de implosiones, incineraciones, tropiezos tontos o ataques de guerrilleros de la resistencia causados por el dispositivo Enmascara2",
     "puntos":"10000000",
-    "img":"img/escudito.png"
+    "img":"img/enmascara_dos.png"
   }
 ]
