@@ -24,16 +24,16 @@
 		</div>
 		<div>
 			<span>Cabeza: </span>
-			<select>
-				<option ng-repeat="objeto in objetos" ng-model="equipCabeza" ng-if="objeto.lugar == 'cabeza'" value="objeto.id">{{ objeto.nombre }}</option>
+			<select ng-model="equipCabeza">
+				<option ng-repeat="objeto in objetos" ng-if="objeto.lugar == 'cabeza'" value="objeto.id">{{ objeto.nombre }}</option>
 			</select>
 			<span>Brazo Izquierdo: </span>
-			<select>
-				<option ng-repeat="objeto in objetos" ng-model="equipBrazoIzq" ng-if="objeto.lugar == 'brazoIzq'" value="objeto.id">{{ objeto.nombre }}</option>
+			<select ng-model="equipBrazoIzq">
+				<option ng-repeat="objeto in objetos" ng-if="objeto.lugar == 'brazoIzq'" value="objeto.id">{{ objeto.nombre }}</option>
 			</select>
 			<span>Brazo Derecho: </span>
-			<select>
-				<option ng-repeat="objeto in objetos" ng-model="equipBrazoDer" ng-if="objeto.lugar == 'brazoDer'" value="objeto.id">{{ objeto.nombre }}</option>
+			<select ng-model="equipBrazoDer">
+				<option ng-repeat="objeto in objetos" ng-if="objeto.lugar == 'brazoDer'" value="objeto.id">{{ objeto.nombre }}</option>
 			</select>
 			<button ng-click="equipar()">Equipar</button>
 	</body>
