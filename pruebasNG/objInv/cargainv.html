@@ -14,9 +14,10 @@
 	<body ng-controller="invCtrl">
 		<div>
 			<p ng-repeat="objeto in objetos" style="border: 2px dashed red; margin: 10px; width: 30%; padding: 5px;">
-				<img src="{{ objeto.img }}" width="48" height="48" />
+				<img src="{{ objeto.img }}" width="48" ng-mouseover="muestraDesc = objeto.id" height="48" />
 				<strong>{{ objeto.nombre }}</strong>
 				<br/>
+				<div ng-show="muestraDesc == objeto.id">
 				<span style="display: block;">{{ objeto.desc }}</span>
 				<br/>
 				<span>Puntos de {{ objeto.tipo }}: <strong>{{ objeto.puntos }}</strong></span>
