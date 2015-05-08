@@ -18,4 +18,7 @@ pruebaInvApp.controller('invCtrl', ['$scope','$interval', '$http', '$cookieStore
 		$cookieStore.put('playInv', equipar);
 		vm.usr.inv = $cookieStore.get('playInv');
 	}
+	vm.muestra = function(id){
+		vm.muestraDesc = id;
+	}
 }])
