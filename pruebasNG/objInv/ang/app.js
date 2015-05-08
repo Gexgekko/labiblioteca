@@ -6,11 +6,11 @@ pruebaInvApp.controller('invCtrl', ['$scope','$interval', '$http', '$cookieStore
 		vm.objetos = objeto;
 		console.log(vm.objetos);
 	})
-	//vm.player = [];
-	//vm.player.inventario = { "cabeza": vm.equipCabeza, "brazoIzq": vm.equipBrazoIzq, "brazoDer": vm.equipBrazoDer };
+	var vm.player.inventario = [];
 	vm.equipar = function(){
-		$cookieStore.put('playInv', vm.player.inventario);
-		var galletilla = $cookieStore.get('playInv');
-		console.log(galletilla);
+		var equipar = { "cabeza": vm.equipCabeza, "brazoIzq": vm.equipBrazoIzq, "brazoDer": vm.equipBrazoDer };
+		$cookieStore.put('playInv', inventario);
+		vm.player.inventario = $cookieStore.get('playInv');
+		console.log(vm.player.inventario);
 	}
 }])
