@@ -6,8 +6,8 @@ pruebaInvApp.controller('invCtrl', ['$scope','$interval', '$http', '$cookieStore
 		vm.objetos = objeto;
 		console.log(vm.objetos);
 	})
-	vm.player = [];
-	vm.player.inventario = { "cabeza": vm.equipCabeza, "brazoIzq": vm.equipBrazoIzq, "brazoDer": vm.equipBrazoDer };
+	//vm.player = [];
+	//vm.player.inventario = { "cabeza": vm.equipCabeza, "brazoIzq": vm.equipBrazoIzq, "brazoDer": vm.equipBrazoDer };
 	vm.equipar = function(){
 		$cookieStore.put('playInv', vm.player.inventario);
 		var galletilla = $cookieStore.get('playInv');
