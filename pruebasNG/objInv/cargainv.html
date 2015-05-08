@@ -17,7 +17,7 @@
 				<img src="{{ objeto.img }}" width="48" ng-mouseover="muestra(objeto.id)" height="48" />
 				<strong>{{ objeto.nombre }}</strong>
 				<br/>
-				<div ng-show="muestraDesc == objeto.id">{{ objeto.id }}</div>
+				<span ng-show="muestraDesc == objeto.id">{{ objeto.id }}</span>
 				<span style="display: block;">{{ objeto.desc }}</span>
 				<br/>
 				<span>Puntos de {{ objeto.tipo }}: <strong>{{ objeto.puntos }}</strong></span>
