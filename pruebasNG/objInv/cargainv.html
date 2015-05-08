@@ -32,7 +32,7 @@
 				<option ng-repeat="objeto in objetos" ng-if="objeto.lugar == 'brazoIzq'" value="{{ objeto.id }}">{{ objeto.nombre }}</option>
 			</select>
 			<span>Brazo Derecho: </span>
-			<select ng-model="player.inventario.brazoDer" ng-change="console.log(player.inventario.brazoDer)">
+			<select ng-model="player.inventario.brazoDer">
 				<option ng-repeat="objeto in objetos" ng-if="objeto.lugar == 'brazoDer'" value="{{ objeto.id }}">{{ objeto.nombre }}</option>
 			</select>
 			<button ng-click="equipar()">Equipar</button>
