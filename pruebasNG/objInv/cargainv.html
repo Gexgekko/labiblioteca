@@ -29,7 +29,7 @@
 			</select>
 			<span>Brazo Izquierdo: </span>
 			<select ng-model="player.inventario.brazoIzq">
-				<option ng-repeat="objeto in objetos" ng-if="objeto.lugar == 'brazoIzq'" value="{{ objeto.id }}">{{ objeto.nombre }}</option>
+				<option ng-repeat="objeto in objetos" ng-if="objeto.lugar == 'brazoIzq'" ng-selected="player.inventario.brazoIzq == objeto.id"value="{{ objeto.id }}">{{ objeto.nombre }}</option>
 			</select>
 			<span>Brazo Derecho: </span>
 			<select ng-model="player.inventario.brazoDer">
