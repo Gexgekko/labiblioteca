@@ -4,28 +4,18 @@ pruebaInvApp.controller('invCtrl', ['$scope','$interval', '$http', '$cookieStore
 	var vm = $scope;
 	$http.get('objetos.json').success(function(objeto){
 		vm.objetos = objeto;
-		console.log(vm.objetos);
 	})
-
 	
-	vm.player = [];
+	vm.usr = [];
 	var tmpInv =  $cookieStore.get('playInv');
-	console.log("Temporal: ")
-	console.log(tmpInv);
 	if(angular.isObject(tmpInv)){
-		vm.player.inventario = $cookieStore.get('playInv');
-		console.log("Cargado");
-		console.log(vm.player.inventario);
+		vm.usr.inv = $cookieStore.get('playInv');
 	}else{
-		vm.player.inventario = [];
+		vm.usr.inv = [];
 	}
 	vm.equipar = function(){
-		var equipar = { "cabeza": vm.player.inventario.cabeza, "brazoIzq": vm.player.inventario.brazoIzq, "brazoDer": vm.player.inventario.brazoDer };
-		console.log("Equipar: ");
-		console.log(equipar);
+		var equipar = { "cabeza": vm.usr.inv.cabeza, "bIzq": vm.usr.inv.bIzq, "bDer": vm.usr.inv.bDer };
 		$cookieStore.put('playInv', equipar);
-		vm.player.inventario = $cookieStore.get('playInv');
-		console.log("Inventario: ");
-		console.log(vm.player.inventario);
+		vm.usr.inv = $cookieStore.get('playInv');
 	}
 }])
