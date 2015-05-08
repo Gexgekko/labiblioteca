@@ -12,6 +12,7 @@ pruebaInvApp.controller('invCtrl', ['$scope','$interval', '$http', '$cookieStore
 	var tmpInv =  $cookieStore.get('playInv');
 	if(angular.isObject(tmpInv)){
 		vm.player.inventario = $cookieStore.get('playInv');
+		console.log("Cargado");
 	}else{
 		vm.player.inventario = [];
 	}
