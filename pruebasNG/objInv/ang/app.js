@@ -1,6 +1,6 @@
 var pruebaInvApp = angular.module('pruebaInvApp',['ngCookies']);
 
-pruebaInvApp.controller('invCtrl', ['$scope','$interval', '$http', '$cookieStore', function($scope,$interval,$http){
+pruebaInvApp.controller('invCtrl', ['$scope','$interval', '$http', '$cookieStore', function($scope,$interval,$http,$cookieStore){
 	var vm = $scope;
 	$http.get('objetos.json').success(function(objeto){
 		vm.objetos = objeto;
