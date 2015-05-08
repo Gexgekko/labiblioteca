@@ -18,7 +18,7 @@ pruebaInvApp.controller('invCtrl', ['$scope','$interval', '$http', '$cookieStore
 		vm.player.inventario = [];
 	}
 	vm.equipar = function(){
-		var equipar = { "cabeza": vm.equipCabeza, "brazoIzq": vm.equipBrazoIzq, "brazoDer": vm.equipBrazoDer };
+		var equipar = { "cabeza": vm.player.cabeza, "brazoIzq": vm.player.brazoIzq, "brazoDer": vm.player.brazoDer };
 		console.log(equipar);
 		$cookieStore.put('playInv', equipar);
 		vm.player.inventario = $cookieStore.get('playInv');
