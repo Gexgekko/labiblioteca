@@ -1,26 +1,30 @@
 [ 
   {  
+    "id":"01",
     "nombre":"Espadón",
     "lugar":"brazoDer",
     "tipo":"espada",
     "desc":"Espadón chachi maximo",
     "puntos":"5",
     "img":"img/espadon.png"
-  },{  
+  },{
+    "id":"02",
     "nombre":"Escudito Ardillil",
     "lugar":"brazoIzq",
     "tipo":"defensa",
     "desc":"Es un pájaro? Es un avión? NOO!! Es el nuevo ESCUDITO SUPER PROTECTOR ARDILLÍSTICO de Ardillas Corp. en colaboración con Josué.",
     "puntos":"10000000",
     "img":"img/escudito.png"
-  },{  
+  },{
+    "id":"03",
     "nombre":"Escu2",
     "lugar":"brazoIzq",
     "tipo":"defensa",
     "desc":"Es un pájaro? Es un avión? NOO!! Es el nuevo ESCUDITO SUPER PROTECTOR ARDILLÍSTICO de Ardillas Corp. en colaboración con Josué.",
     "puntos":"10000000",
     "img":"img/escudito.png"
-  },{  
+  },{
+    "id":"04",
     "nombre":"Casco IMG Espadon",
     "lugar":"cabeza",
     "tipo":"defensa",
