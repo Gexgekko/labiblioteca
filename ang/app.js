@@ -24,7 +24,10 @@ laBibliotecaApp.controller('baseCtrl', ['$scope','$interval','$cookieStore', fun
  			}
  		}
 	}
-
+	vm.noConfirma = function(){
+		vm.parrafo = 0;
+		vm.confirma = 0;
+	}
 	vm.$watch('usr.clase',function(clase, antiguo){
 		if(clase == 'Mago'){
 			vm.usr.magia=20
