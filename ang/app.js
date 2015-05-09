@@ -8,7 +8,7 @@ laBibliotecaApp.config(['$scope','$cookieStore', function($scope,$cookieStore){
 //		vm.usr = [];
 //	}
 	vm.txtcentral = 0;
-//}]);
+}]);
 
 laBibliotecaApp.controller('baseCtrl', ['$scope','$interval','$cookieStore', function($scope,$interval,$cookieStore){
 	var vm = $scope;
