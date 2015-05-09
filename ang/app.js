@@ -6,6 +6,7 @@ laBibliotecaApp.controller('baseCtrl', ['$scope','$interval', function($scope,$i
 	var contador = 0;
 	vm.teclea = function(tecla){
 		if(tecla.wich === 13){
+			console.log("Enter");
 			if(contador == 0){
 				contador = 1;
 				vm.parrafo = 0;
