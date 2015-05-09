@@ -1,10 +1,16 @@
-var laBibliotecaApp = angular.module('laBibliotecaApp',[]);
-laBibliotecaApp.controller('baseCtrl', ['$scope','$interval', function($scope,$interval){
+var laBibliotecaApp = angular.module('laBibliotecaApp',['ngCookies']);
+laBibliotecaApp.config(function($scope,$cookieStore){
 	var vm = $scope;
-	vm.usr = [];
+	var tmpPart = $cookieStore.get('playInv');
+	if(angular.isObject(tmpPart)){
+		vm.usr = tmpPart;
+	}else{
+		vm.usr = [];
+	}
 	vm.txtcentral = 0;
-	vm.usr.clase = "";
-	vm.mago = 0;
+})
+laBibliotecaApp.controller('baseCtrl', ['$scope','$interval','$cookieStore', function($scope,$interval,$cookieStore){
+	var vm = $scope;
 	vm.$watch('usr.clase',function(clase, antiguo){
 		if(clase == 'Mago'){
 			console.log("Ha entrao en mago")
@@ -16,8 +22,6 @@ laBibliotecaApp.controller('baseCtrl', ['$scope','$interval', function($scope,$i
 			vm.usr.vitalidad=15
 			vm.usr.sigilo=15
 			vm.usr.precision=15
-			console.log('Stats asignadas a usuario: ');
-			console.log(vm.usr);
 		}
 	})
 	vm.daEnter = function(keyEvent,bloque,parr) {
