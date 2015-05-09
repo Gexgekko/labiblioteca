@@ -31,6 +31,10 @@ input {
 	cursor: none;
 }
 
+.ocBoton {
+    background: transparent;
+    border: none !important;
+}
 
 input:focus {
 	outline: none;

@@ -12,7 +12,7 @@ laBibliotecaApp.controller('baseCtrl', ['$scope','$interval','$cookieStore', fun
 	}
 	vm.txtcentral = 0;
 
-	
+
 	vm.daEnter = function(keyEvent,bloque,parr) {
  		if (keyEvent.which === 13){
  			vm.txtcentral = bloque;
@@ -27,7 +27,6 @@ laBibliotecaApp.controller('baseCtrl', ['$scope','$interval','$cookieStore', fun
 
 	vm.$watch('usr.clase',function(clase, antiguo){
 		if(clase == 'Mago'){
-			console.log("Ha entrao en mago")
 			vm.usr.magia=20
 			vm.usr.pegar=15
 			vm.usr.golpear=13
@@ -36,6 +35,7 @@ laBibliotecaApp.controller('baseCtrl', ['$scope','$interval','$cookieStore', fun
 			vm.usr.vitalidad=15
 			vm.usr.sigilo=15
 			vm.usr.precision=15
+			console.log(vm.usr);
 		}
 	})
 
