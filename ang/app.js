@@ -8,6 +8,7 @@ laBibliotecaApp.controller('baseCtrl', ['$scope','$interval', function($scope,$i
 	vm.$watch(vm.usr.clase, function(clase){
 		console.log("Entra");
 		if(clase == 'Mago'){
+			console.log("Ha entrao en mago")
 			vm.usr.magia=20
 			vm.usr.pegar=15
 			vm.usr.golpear=13
@@ -22,7 +23,6 @@ laBibliotecaApp.controller('baseCtrl', ['$scope','$interval', function($scope,$i
 	})
 	vm.daEnter = function(keyEvent,bloque,parr) {
  		if (keyEvent.which === 13){
- 			console.log(vm.player.nombre);
  			vm.txtcentral = bloque;
  			vm.parrafo = 0;
  			if(parr > 0){
