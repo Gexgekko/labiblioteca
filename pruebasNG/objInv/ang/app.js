@@ -21,4 +21,7 @@ pruebaInvApp.controller('invCtrl', ['$scope','$interval', '$http', '$cookieStore
 	vm.muestra = function(id){
 		vm.muestraDesc = id;
 	}
+	vm.muestraTecla = function(teclaPulsada){
+		console.log(teclaPulsada);
+	}
 }])

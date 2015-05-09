@@ -11,7 +11,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-cookies.js"></script>
 		<script type="text/javascript" src="ang/app.js"></script>
 	</head>
-	<body ng-controller="invCtrl">
+	<body ng-controller="invCtrl" ng-keyup="muestraTecla($event)">
 		<div ng-init="muestraDesc = null;">
 			<p ng-repeat="objeto in objetos" style="border: 2px dashed red; margin: 10px; width: 30%; padding: 5px;" ng-mouseover="muestra(objeto.id)">
 				<img src="{{ objeto.img }}" width="48" height="48" />
