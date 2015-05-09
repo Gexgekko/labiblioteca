@@ -16,7 +16,7 @@
 		<script type="text/javascript" src="ang/app.js"></script>
 	</head>
 
-	<body ng-controller="baseCtrl" ng-keyup="teclea($event)">
+	<body ng-controller="baseCtrl">
 		<div class="col-xs-6 col-md-4"><!--Inventario y stats personales.--></div>
 		<div class=" col-xs-6 col-md-4">
 			<div ng-show="txtcentral == 0">
@@ -24,7 +24,7 @@
 				<p>(No te preocupes, el nombre es temporal)</p>
 				<p>Introduce tu nombre, pero calladito, que estamos en una BIBLIOTECA magica</p>
 				<p>('BIBLIOTECA' es mas importante que 'magica' y por eso lleva mayusculas)</p>
-				<span>mente:~$ <input type="text" class="textoJugador" ng-model="player.nombre" /></span>
+				<span>mente:~$ <input type="text" class="textoJugador" ng-model="player.nombre" ng-keyup="daEnter($event,1,3)" /></span>
 			</div>
 
 			<div ng-show="txtcentral == 1">
@@ -32,7 +32,7 @@
 				<p ng-show="parrafo >=  1">Ahora que sabemos como te llamas (te llamas <span class="refRojo">{{ player.nombre }}</span>, por si no te acordabas) te asignaremos una labor y suponiendo que tu cerebro de para realizarla, la eleccion sera definitiva... O no... A mi me da igual, es cosa tuya.</p>
 				<p ng-show="parrafo >= 2">Sigueme, <span class="refRojo">{{ player.nombre }}</span>, ven a mirar estos libros sobre magia (y demas cosas inutiles) y elige uno adecuado... O no... A mi me da igual, es cosa tuya.</p>
 				<p ng-show="parrafo >= 3">*Buscando los libros en la estanteria, por favor, espera aproximadamente <span class="refRojo">3.14159</span> segundos*
-				<!--<input type="text" class="noCursor" placeholder="Continuar..." autofocus />--></p>
+				<input type="text" class="noCursor" ng-keyup="daEnter($event,2,0)" placeholder="Continuar..." autofocus /></p>
 			</div>
 			<div ng-show="txtcentral == 2">
 				<p ng-show="parrafo >= 0">
