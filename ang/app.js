@@ -1,5 +1,5 @@
 var laBibliotecaApp = angular.module('laBibliotecaApp',['ngCookies']);
-laBibliotecaApp.config(function($scope,$cookieStore){
+laBibliotecaApp.config(['$scope','$cookieStore', function($scope,$cookieStore){
 	var vm = $scope;
 	var tmpPart = $cookieStore.get('playInv');
 	if(angular.isObject(tmpPart)){
@@ -8,7 +8,8 @@ laBibliotecaApp.config(function($scope,$cookieStore){
 		vm.usr = [];
 	}
 	vm.txtcentral = 0;
-})
+}]);
+
 laBibliotecaApp.controller('baseCtrl', ['$scope','$interval','$cookieStore', function($scope,$interval,$cookieStore){
 	var vm = $scope;
 	vm.$watch('usr.clase',function(clase, antiguo){
