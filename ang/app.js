@@ -1,7 +1,7 @@
 var laBibliotecaApp = angular.module('laBibliotecaApp',[]);
 laBibliotecaApp.controller('baseCtrl', ['$scope','$interval', function($scope,$interval){
-	vm.usr = [];
 	var vm = $scope;
+	vm.usr = [];
 	vm.txtcentral = 0;
 	vm.usr.clase = "";
 	vm.$watch('vm.usr.clase', function(clase){
