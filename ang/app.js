@@ -5,8 +5,7 @@ laBibliotecaApp.controller('baseCtrl', ['$scope','$interval', function($scope,$i
 	vm.txtcentral = 0;
 	vm.usr.clase = "";
 	vm.mago = 0;
-	vm.$watch(vm.usr.clase, function(clase){
-		console.log("Entra");
+	vm.$watch('usr.clase',function(clase, antiguo){
 		if(clase == 'Mago'){
 			console.log("Ha entrao en mago")
 			vm.usr.magia=20
