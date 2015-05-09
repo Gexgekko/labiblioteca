@@ -4,6 +4,7 @@ laBibliotecaApp.controller('baseCtrl', ['$scope','$interval', function($scope,$i
 	vm.usr = [];
 	vm.txtcentral = 0;
 	vm.usr.clase = "";
+	vm.mago = 0;
 	vm.$watch('vm.usr.clase', function(clase){
 		if(clase == 'Mago'){
 			vm.usr.magia=20
