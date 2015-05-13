@@ -13,29 +13,29 @@
 	</head>
 	<body ng-controller="invCtrl" ng-keyup="muestraTecla($event)">
 		<div ng-init="muestraDesc = null;">
-			<div ng-repeat="objeto in objetos" style="border: 2px solid #A4A4A4; margin: 10px; width: 30%; padding: 5px; background-color: #6E6E6E; color: white;" ng-mouseover="muestra(objeto.id)">
-				<img src="{{ objeto.img }}" width="48" height="48" />
+			<div ng-repeat="objeto in objetos" style="border: 2px solid; margin: 10px; width: 30%; padding: 5px;" ng-mouseover="muestra(objeto.id)">
+				<img src="{{ ::objeto.img }}" width="48" height="48" />
 				<div ng-show="muestraDesc == objeto.id">
-					<strong>{{ objeto.nombre }}</strong>de la compañía <strong>{{ objeto.comp }}</strong>
+					<strong>{{ objeto.nombre }}</strong>de la compañía <strong>{{ ::objeto.comp }}</strong>
 					<br/>
-					<span style="display: block;">{{ objeto.desc }}</span>
+					<span style="display: block;">{{ ::objeto.desc }}</span>
 					<br/>
-					<span>Puntos de {{ objeto.tipo }}: <strong>{{ objeto.puntos }}</strong></span>
+					<span>Puntos de {{ ::objeto.tipo }}: <strong>{{ ::objeto.puntos }}</strong></span>
 				</div>
 			</div>
 		</div>
 		<div>
 			<span>Cabeza: </span>
 			<select ng-model="usr.inv.cabeza">
-				<option ng-repeat="objeto in objetos" ng-if="objeto.lugar == 'cabeza'" ng-selected="usr.inv.cabeza == objeto.id" value="{{ objeto.id }}">{{ objeto.nombre }}</option>
+				<option ng-repeat="objeto in objetos" ng-if="objeto.lugar == 'cabeza'" ng-selected="usr.inv.cabeza == objeto.id" value="{{ objeto.id }}">{{ ::objeto.nombre }}</option>
 			</select>
 			<span>Brazo Izquierdo: </span>
 			<select ng-model="usr.inv.bIzq">
-				<option ng-repeat="objeto in objetos" ng-if="objeto.lugar == 'bIzq'" ng-selected="usr.inv.bIzq == objeto.id" value="{{ objeto.id }}">{{ objeto.nombre }}</option>
+				<option ng-repeat="objeto in objetos" ng-if="objeto.lugar == 'bIzq'" ng-selected="usr.inv.bIzq == objeto.id" value="{{ objeto.id }}">{{ ::objeto.nombre }}</option>
 			</select>
 			<span>Brazo Derecho: </span>
 			<select ng-model="usr.inv.bDer">
-				<option ng-repeat="objeto in objetos" ng-if="objeto.lugar == 'bDer'" value="{{ objeto.id }}">{{ objeto.nombre }}</option>
+				<option ng-repeat="objeto in objetos" ng-if="objeto.lugar == 'bDer'" value="{{ objeto.id }}">{{ ::objeto.nombre }}</option>
 			</select>
 			<button ng-click="equipar()">Equipar</button>
 	</body>
